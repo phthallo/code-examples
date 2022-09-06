@@ -1,5 +1,6 @@
-#### ONLY FOR USE IN TAILWINDCSS.
-#### Originally designed to be displayed on the short-lived site for artists Buzzly.art
+<-- ONLY FOR USE IN TAILWINDCSS.
+ Originally designed to be displayed on the short-lived site for artists Buzzly.art
+-->
 
 <div class = "bg-white rounded-lg m-5">
   <div class = "grid grid-cols-9 row-span-6">
