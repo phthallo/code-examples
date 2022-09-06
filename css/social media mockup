@@ -1,0 +1,105 @@
+#### ONLY FOR USE IN TAILWINDCSS.
+#### Originally designed to be displayed on the short-lived site for artists Buzzly.art
+
+<div class = "bg-white rounded-lg m-5">
+  <div class = "grid grid-cols-9 row-span-6">
+    <img class = "overflow-hidden h-36 w-full col-span-9 row-span-2 object-cover z-0" src = "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></img>
+    <img class = "rounded-full absolute w-36 object-center mt-16 ml-8 border-4 z-10 col-start-6 col-end-8" src = "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"></img>
+    <span class = "col-start-5 col-end-9 text-right break-words font-medium text-2xl mt-9">
+      Username
+    </span>
+    <span class = "col-start-5 col-end-9 text-right text-gray-500 break-words text-xl mb-6">@SDHFKdJHJDSK
+    </span>
+
+<div class = "col-span-3 text-center border-b-2 font-medium pb-2 mr-2 text-cyan-500 border-cyan-500">
+  posts
+</div>
+
+<div class = "col-span-3 text-center border-b-2 text-gray-600 font-medium pb-2 mr-2 hover:text-cyan-500 hover:border-cyan-500">
+  replies
+</div>
+
+<div class = "col-span-3 text-center border-b-2 text-gray-600 font-medium pb-2 mr-2 hover:text-cyan-500 hover:border-cyan-500">
+  likes
+</div>
+
+<img class = "rounded-full w-24 mt-5 object-center border-4 col-start-1 col-end-3 mx-auto" src = "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"></img>
+  <span class = "col-start-3 col-end-5 font-medium text mt-6">
+    username
+  </span>
+
+  <span class = "col-start-3 col-end-5 text -mt-16 text-gray-500">
+    @a
+  </span>
+
+  <span class = "col-start-3 col-end-5 -mt-9 text text-gray-300">
+    4 Jan
+  </span>
+  
+  <span class = "col-start-3 col-end-9 mb-5">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </span>
+
+  <i class="far fa-heart col-start-7 col-end-8 text-2xl text-gray-300 hover:text-red-700 duration-200"></i>
+  <i class="far fa-retweet-alt col-start-8 col-end-9 text-2xl text-gray-300 hover:text-cyan-500 duration-200"></i>
+  <i class="far fa-share-alt col-start-9 col-end-9 text-2xl text-gray-300 hover:text-gray-500 duration-200"></i>
+
+<hr class = "my-3 col-span-9 text-gray-100"></hr>
+
+<!-- Something -->
+<img class = "rounded-full w-24 mt-5 object-center border-4 col-start-1 col-end-3 mx-auto" src = "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"></img>
+  <span class = "col-start-3 col-end-9 font-medium text mt-6">
+    username
+  </span>
+
+  <span class = "col-start-3 col-end-9 text -mt-16 text-gray-500">
+    @a
+  </span>
+
+  <span class = "col-start-3 col-end-9 -mt-9 text text-gray-300">
+    4 Jan
+  </span>
+  
+  <span class = "col-start-3 col-end-9 mb-5">
+    i definitely took this photo 
+  </span>
+  <img class =  "col-start-3 col-end-9 rounded-xl object-cover h-48 w-full overflow-hidden border-2 mb-5 hover:opacity-75" src = "https://images.unsplash.com/photo-1641157140295-b477ca55ddef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"></img>
+  
+  <i class="far fa-heart col-start-7 col-end-8 text-2xl text-red-700 hover:text-gray-300 duration-200"></i>
+  <i class="far fa-retweet-alt col-start-8 col-end-9 text-2xl text-cyan-500 hover:text-gray-300 duration-200"></i>
+  <i class="far fa-share-alt col-start-9 col-end-9 text-2xl text-gray-300 hover:text-gray-500 duration-200"></i>
+
+<hr class = "my-3 col-span-9 text-gray-100"></hr>
+
+<!-- Something -->
+<hr class = "ml-4 mt-3 text-gray-200 -mr-8"></hr><i class="fal fa-arrow-right ml-9 mt-1 text-gray-200"></i>
+<span class = "text-sm text-gray-300 col-start-3 col-end-9 -mb-7">Reblogged by username <i class = "far fa-retweet-alt text-gray-300"></i></span>
+<img class = "rounded-full w-24 mt-5 object-center border-4 col-start-1 col-end-3 mx-auto" src = "https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"></img>
+  <span class = "col-start-3 col-end-9 font-medium text mt-6">
+    differentusername
+  </span>
+
+  <span class = "col-start-3 col-end-9 text -mt-16 text-gray-500">
+    @b 
+  </span>
+  <span class = "col-start-3 col-end-9 -mt-16 ml-8 text-gray-800">replying to</span>
+  <span class = "col-start-3 col-end-9 -mt-16 ml-28 text-gray-500">@a</span>
+
+
+  <span class = "col-start-3 col-end-9 -mt-9 text text-gray-300">
+    4 Jan
+  </span>
+  
+  <span class = "col-start-3 col-end-9 mb-5">
+    wow 
+  </span>
+
+  <i class="far fa-heart col-start-7 col-end-8 text-2xl text-gray-300 hover:text-red-700 duration-200"></i>
+  <i class="far fa-retweet-alt col-start-8 col-end-9 text-2xl text-cyan-500 hover:text-gray-300 duration-200"></i>
+  <i class="far fa-share-alt col-start-9 col-end-9 text-2xl text-gray-300 hover:text-gray-500 duration-200"></i>
+<hr class = "my-3 col-span-9 text-gray-100"></hr>
+</div>
+
+</div>
+</div>
+
