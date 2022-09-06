@@ -1,0 +1,307 @@
+#TO DO: DONE - DONE-ISH - MAKE IT SEEM MORE ENGAGING IDK hELP - SEE IF I CAN ROUND THE FUEL VALUES CAN'T DOD THIS- HELP
+import time 
+import random 
+repeat = 'yes' #the game is automatically set to begin, when the program is run
+tries = 0 #just a fun little snippet counting the amount of times they restart the game without shutting the program down and opening it again.
+while repeat == 'yes': #define default variables
+    choice = ' ' #the user's decision - changes with each question asked
+    key = ' ' #do they have the key in order to leave room one?
+    solve = ' ' #have they solved the question needed?
+    monster = 0 #amount of times they have been attacked by the monster.
+    start_time = time.time() #start a timer, to be used later in order to keep track of the 'fuel' being used.
+    if tries >= 3: #if you consistently restart the game, you get a fun message!1!1!! ha ha ha
+        time.sleep(2)
+        print("Don't you have anything better to do?") 
+        time.sleep(2)
+        print()
+    print()
+    print("Hello. It seems like you're finally awake. Do you know where you are?")
+    time.sleep(1)
+    print("You're onboard the ███████, a spaceship travelling through the Kasterborous Constellation. You departed Earth 1263 days ago, and have remained in cryosleep for the majority of that time. Your job, as the final remaining astronaut - our sensors indicate that - onboard the ███████, is to reach a new planet, unseen by the rest of humanity.")
+    time.sleep(2)
+    print("This spaceship is no longer suitable for human inhabitation, and will not be able to support life for much longer. Your goal is to maintain the areas of the spaceship and guide it towards the nearest habitable planet, before it's too late.")
+    name = input("What is your name? ")
+    print(f"Good, {name}. Let's begin.")
+    print()
+    time.sleep(1)
+    print("You are in a dark room with the sound of softly thrumming engines echoing in your ears. You are wearing a spacesuit, with a handheld device with a flickering screen attached on your arm. Your head throbs as you raise your arm to shove a heavy container off your body.")
+    if tries == 1: #if you've played more than once, you get a fun message!1!1!! ha ha ha
+        print()
+        time.sleep(2)
+        print("D o e s n ' t  t h i s  f e e l  f a m i l i a r ?")
+        time.sleep(2)
+        print() 
+    choice = input("A rhythmic beeping noise is in the distance. You decide to ignore it. Your choices are - (look door/look ground) ")
+    while key == ' ':
+        if choice == "look door":
+            print("It’s locked.")
+            time.sleep(1)
+            choice = input("Your choices are - (look door/look ground) ")
+        if choice == "look ground":
+            print("You found a key on the ground!")
+            key = 'yes'
+            time.sleep(1)
+            choice = input("Your choices are - (look door/look ground) ")
+        while choice != "look door" or choice == "look ground":
+            print("Your answer is invalid. Try again? ")
+            time.sleep(1)
+            choice = input("Your choices are - (look door/look ground) ")
+            if choice == "look door" or choice == "look ground":
+                break
+    while choice == "look ground" and key == "yes":
+        print("There's nothing there.")
+        time.sleep(1)
+        choice = input("Your choices are - (look door/look ground) ")
+    if choice == "look door" and key == "yes":
+        print("You unlock the door with the key. ")
+    time.sleep(1)
+    print("You walk through the door, and find yourself in a dim hallway. Behind you, a mass of broken and tangled wires twitches, rendering that path inaccessible. In front of you, is a single open door. You move towards the door, footsteps ringing on the metallic ground.")
+    print()
+    time.sleep(1)
+    print("This room is lit with an ominous red glow, and the beeping is louder here. It’s the reactor room. Your handheld solemnly informs you that the reactor will explode if you don’t disable the autodestruct, and offers up a menu. It’s encrypted, though - how will you decipher this?")
+    time.sleep(2)
+    randomno = random.randint(1,3) #bro i'm having so much fun with rng right now /s STOP ROLLING A 3 I NEED TO TEST SOME STUFF EDIT: CAN YOU ROLL 2 NOW I STG THIS RNG IS BIASED
+    solve = 'no' #QUESTION 1 - BEGINNING
+    while randomno == 1 and solve == 'no':
+        print()
+        print("Downloading ReactOrbit instruction guide Version 1.02.75…")
+        print()
+        time.sleep(1)
+        print("IV | Manual Operation of the Reactor")
+        print()
+        print("In order to manually operate the ######, you must ensure that first, no one is ###### the surveillance booth. Once that is done, use your handheld device to connect to the wireless connection and open the ######. There will be an option to disable the ######.")
+        time.sleep(1)
+        choice = input("Input your answers in the order they appear, one after the other with a space in between. Word options - autodestruct inside controls reactor ")
+        if choice == "reactor inside controls autodestruct":
+            solve = 'yes'
+        else:
+            solve = ' '
+            print("Your answer is invalid. Try again?")
+            time.sleep(1)
+
+    while randomno == 2 and solve == 'no':
+        print()
+        print("++ Thanks for using ReactOrbit for your out-of-this-world machinery needs! ++")
+        print()
+        time.sleep(1)
+        print("It appears that you’re in a situation where you need to disable the autodestruct, because of (a. Unexplained interplanetary interference, b. ReactOrbit equipment failure or c. Absurd human decisions. (Note that this we are not liable for the latter))  ")
+        print("First, ensure that no living being who doesn’t want to be incarcerated is ##### the surveillance booth. Next, use your ReactOrbit or elsewise licensed ##### device, and connect it to the ##### Wi-Fi connection. There will be a menu with an option to disable the ###### , if for whatever reason it is enabled.")
+        time.sleep(1)
+        choice = input("Input your answers in the order they appear, one after the other with a space in between. Word options - reactor inside handheld autodestruct. ")
+        if choice == "inside handheld reactor autodestruct":
+            solve = 'yes'
+        else:
+            solve = 'no'
+            print("Your answer is invalid. Try again?")
+            time.sleep(1)
+    number1 = random.randint(1000,4999)
+    number2 = random.randint(1000,4999)
+    while randomno == 3 and solve == 'no':
+        code = input(f"The code to disable the autodestruct has four characters. It’s the sum of {number1} + {number2}. What’s the code? ")
+        if str(code) == str(number1 + number2): #I FIGURED IT OUT ARE YOU PROUD OF ME 
+            solve = 'yes' #they've been made into strings otherwise it'd bring up an error message when people "accidentally" typed in letters/anything other than numbers
+        else:
+            solve = 'no'
+            print("Your answer is invalid. Try again?")
+
+    if solve == 'yes':
+        print("The beeping noise stops, and the light in the room returns to a normal, albeit dim yellow. You have successfully disabled the reactor. With this knowledge, you decide to leave the room through the other door.")
+        print()
+        time.sleep(1)
+    print("You enter another hallway, this time with a huge window covering one side of the wall. You look outside, see the massive expanse of deep blue, shattered cosmoses, and the light from distant, and not-so distant stars.")
+    time.sleep(1)
+    print("It's beautiful.")
+    if tries == 1:
+        print()
+        time.sleep(2)
+        print("Y o u ' v e  s e e n  t h i s  b e f o r e,  h a v e n ' t  y o u ?")
+        time.sleep(2)
+        print()
+    print("There’s a trapdoor on the ground in front of you. It’s already open, for whatever reason. Tentatively, you walk towards it, and climb down the steel ladder into the dark.")
+    time.sleep(1)
+    print("As your eyes adjust to the dim blue lighting, your handheld helpfully informs you that you are now in the fuel bays, where all the fuel tanks are located for the journey.")
+    solve = ' '
+    time.sleep(1)
+    choice = input("Your choices are - (look tanks/look panel) ").lower()
+    while solve == ' ':
+        while choice == "look tanks":
+            attack = random.randint(1,2)
+            print("You walk towards the tanks, and take a look. You can see that the fuel has been leaking out of both tanks, pooling in a goopy sludge on the ground.")
+            if attack != 1 or monster != 0:
+                choice = input("Your choices are - (look tanks/look panel) ")
+            if monster == 0 and choice == "look tanks":
+                if attack == 1:
+                    print("There’s a growl behind you. You turn around to see a large, dark creature rise out of the shadows between the tanks, capturing you in its red glow.")
+                    time.sleep(1.5)
+                    print("It dives straight at you!")
+                    time.sleep(1)
+                    print("Suddenly, one of the pipes from behind the creature breaks and conks it right on the head! It falls to the ground, unconscious, and the broken piping starts leaking yellowish fumes around the room. Quick, you’ve got to get out of here! But you can’t leave without seeing what’s wrong with the fuel!")
+                    choice = input("Your choices are - (look tanks/look panel) ")
+                    monster = monster + 1
+                
+        if choice == "look panel":
+            print("You walk towards the panel, avoiding the mess on the floor. Tapping it repeatedly to wake the screen up, it finally buzzes and immediately blares out a warning. ")
+            end_time = time.time()
+            fuelthing = 10000 - ((end_time - start_time)*20)
+            if fuelthing < 2000:
+                fuelthing = random.randint(2400,3000)
+                fuelthing = 10000 - fuelthing
+            time.sleep(1)
+            print(f"++ FUEL TANKS BREACHED. REMAINING FUEL: {fuelthing} kg. ESTIMATED TRAVEL DISTANCE: {fuelthing/20} km. ++")
+            print()
+            time.sleep(1)
+            print("You’re running low on fuel. Your ship is compromised, and on the verge of falling apart.")
+            time.sleep(2)
+            print("There may be something - perhaps a monster - still onboard with you, and you’re floating on a dead ship through space. For now, you can patch up the leaking tanks to stop any more from coming out.")
+            solve = 'yes'
+        elif choice != "look tanks" or choice != "look panel":
+            print("Your answer is invalid. Try again?")
+            time.sleep(1)
+            choice = input("Your choices are - (look tanks/look panel) ")
+
+    solve = ' ' #QUESTION TWO - BEGINNING
+    time.sleep(1)
+    print("Your handheld tells you that the leak is roughly 5cm wide, and 7cm long. In your satchel, you have four tubes of resin which can be used to seal up the leak once it dries.")
+    time.sleep(1)
+    print("The first tube contains 25ml of resin, the second tube contains 15ml of resin, the third tube contains 20ml of resin, and the fourth tube contains 5ml of resin.")
+    choice = str(input("Which two tubes exactly cover the leak, if 1ml of resin covers 1cm²? Input your two answers with a space in between. Answer options - 1/2/3/4. "))
+    while solve == ' ':
+        if '2' in choice and '3' in choice:
+            time.sleep(1)
+            print("You manage to patch up the leak with your resin. Shuddering, you leave the fuel tanks, and climb back up the ladder to the hallway. It’s growing colder down there.")
+            solve = 'yes'
+        while '2' not in choice or '3' not in choice:
+            print("Your answer is invalid. Try again?")
+            choice = input("Which two tubes exactly cover the leak, if 1ml of resin covers 1cm²? Input your two answers with a space in between. Answer options - 1/2/3/4.")
+
+    if solve == 'yes':
+        print("You’re back in the same hallway as before. You look out of the window, and inhale sharply as you see that your ship has drifted closer to the sun.")
+        print()
+        time.sleep(2)
+        print("Your resin patch is a temporary solution at most, and you’ll need to hurry if you want to have enough fuel to land.")
+        time.sleep(2)
+        print("You’re back in the same hallway as before. You look out of the window, and inhale sharply as you see that your ship has drifted closer to the sun. Your resin patch is a temporary solution at most, and you’ll need to hurry if you want to have enough fuel to land. Next - you need to go to the life support systems to make sure everything’s working fine.")
+
+    solve = ' ' #QUESTION THREE - BEGINNING
+    hours = random.randint(2,10)
+    minutes = random.randint(2,59)
+    oxygen = random.randint(1,15)
+    nitrogen = random.randint(1,60)
+    needed_oxygen = 21 - oxygen
+    needed_nitrogen = 78 - nitrogen
+    print("You turn right at the intersection and enter Life Support. Life Support features one of the most cheerful sights you've seen since waking up on this spaceship.")
+    time.sleep(1)
+    print("There's a tree growing in the centre of the room, branches spread to cover the entire ceiling and entwined with the wires above.")
+    if tries == 1:
+        print()
+        time.sleep(2)
+        print("I t ' s  j u s t  l i k e  l a s t  t i m e.")
+        time.sleep(2)
+        print()
+    time.sleep(0.75)
+    print("You wonder how it's still alive.")
+    time.sleep(0.75)
+    print()
+    print("You move towards the touchscreen panel that's situated between the roots of the tree, just barely covered by tall grass. Kneeling down, you see how the screen is still alive.")
+    time.sleep(1)
+    print()
+    print("It's showing the current status of the air and water on board, with a graph that fluctuates every second. You realise that it's displaying how much air and water is still available to you.")
+    print(f"The computer has an estimate of how long its supplies will last you. In {hours} hours and {minutes} minutes, the ship will stop its flow of supplies, and you won't have enough oxygen and water to survive.")
+    time.sleep(1)
+    print()
+    print("There's an option for you to re-adjust the values yourself. If you want to be able to last on this ship longer, you'll need to change these yourself.")
+    time.sleep(1)
+    print("Air is made up of about 21% oxygen, and 78% nitrogen, with the remaining composed of other gases.")
+    time.sleep(1)
+    print()
+    print(f"In {hours} hours and {minutes} minutes, the levels aboard this ship will reach dangerous levels. There will only be {oxygen}% oxygen and {nitrogen}% nitrogen - not enough to sustain human life.")
+    print("You can manually adjust the flow of oxygen and nitrogen to balance it out. What's the difference between the current levels, and the recommended levels of oxygen and nitrogen needed?")
+    time.sleep(1)
+    print()
+    choice = input("Input your answer for the oxygen. ") #NO CAUSE THIS QUESTION MAKES NO SENSE :skull_emoji: DON'T KILL ME ASDHDASJK
+    time.sleep(1)
+    choice2 = input("Input your answer for the nitrogen. ")
+    time.sleep(1)
+    while solve == ' ':
+        if str(choice) == str(needed_oxygen) and str(choice2) == str(needed_nitrogen):
+            print(f"You tap these values into the panel, and set the computer to fix these in {hours} hours and {minutes} minutes.")
+            solve = 'yes'
+        elif str(needed_oxygen) not in str(choice) or str(needed_nitrogen) not in str(choice2):
+            print("Your answer is invalid. Try again?")
+            choice = input(f"Air is made up of about 21% oxygen, and 78% nitrogen, with the remaining composed of other gases. There will be {oxygen}% oxygen and {nitrogen}% nitrogen left in {hours} hours and minutes {minutes}. How much oxygen will you need to balance it out? ")
+            choice2 = input("How much nitrogen will you need to balance it out? ") #fix this help me #done actually
+    end_time = time.time()
+    elapsed_time = end_time - start_time
+    time.sleep(1)
+    print("Exiting Life Support, you now see that you will need to head towards the Control Room. You backtrack out of Life Support, and walk down the hallway into the Control Room.")
+    print("It's a wide, vast room with - like the hallway - a huge window spanning one of the walls, showing you a view of the world outside.")
+    print("There's nothing to fear.")
+    time.sleep(1)
+    print()
+    print("There are three planets that you can see in the distance. You plug in your handheld to the main control panel, and let the information slowly load onto the screen.")
+    print()
+    print("PLANET ONE: Hethara. 984 km.")
+    print("Hethara is a habitable planet, with similar conditions to Earth. Thanks to its proximity to the sun, it is perpetually dawn, with lilac skies and a breathable atmosphere.")
+    time.sleep(1)
+    print()
+    print("PLANET TWO: Aeris. 663 km.")
+    time.sleep(1)
+    print("Aeris is a somewhat habitable planet. It features dark, heaping forests with consistent rain and glowing algae. It's a calming and relaxing to be in.")
+    print()
+    print("PLANET THREE: Carria. 224 km.")
+    print("Carria is the planet of the survivors. Dark and light creatures roam the skies, and only those who are truly able to escape them will be able to survive. However, within the broken structures and crumbling towers, lies one of the greatest interstellar mysteries to ever exist. What could you discover?")
+    print()
+    time.sleep(1)   
+    print(f"You have {fuelthing} kg of fuel left, and thanks to your fuel-efficient engines, you are able to traverse 1km with 10kg of fuel.")
+    time.sleep(1)
+    solve = ' ' #QUESTION FOUR - BEGINNING
+    while solve == ' ':
+        choice = input("Which of these three planets do you want to land on? You have to make sure that you have enough fuel to land on it. Answer options - (Hethara/Aeris/Carria) ")
+        if choice == 'Hethara' and (fuelthing/10) > 984: #if the player's choice is Hethara, and they have more than 5450 kg of fuel left, they can visit it.
+            solve = 'yes'
+        if choice == 'Hethara' and (fuelthing/10) < 984: # "
+            solve = ' '
+            print("You don't have enough fuel to visit this planet! Pick again out of the ones you can access.")
+        if choice == 'Aeris' and (fuelthing/10) > 663:
+            solve = 'yes'
+        if choice == 'Aeris' and (fuelthing/10) < 663:
+            solve = ' '
+            print("You don't have enough fuel to visit this planet! Pick again out of the ones you can access.")
+        if choice == 'Carria' and (fuelthing/10) > 224:
+            solve = 'yes'
+        if choice == 'Carria' and (fuelthing/10) < 224:
+            solve = ' '
+            print("You don't have enough fuel to visit this planet! Pick again out of the ones you can access.")
+        if choice != 'Hethara' and choice != 'Aeris' and choice != 'Carria' and choice != 'Gallifrey':
+            print("You can't visit that planet! Pick again out of the ones you can access.")
+            solve = ' '
+        if choice == 'Gallifrey':
+            print("...")
+            time.sleep(1)
+            print("You remember that you don't have a TARDIS. Maybe you should pick another planet?")
+            solve = ' '
+    if solve == 'yes':
+        print(f"You plug {choice}'s coordinates into your monitor, and smile as you feel the ship thrum under your feet. It's on autopilot for now, so you can sit back, relax and enjoy the views.")
+        time.sleep(1)
+        print("You still don't have any idea how you got here, and you have no idea why you can't remember. The ship *technically* isn't yours, but does that really matter?")
+        choice = input("Even your previous memories have been withheld from you. So why not take back something of your own? Name the ship, anything you want to. ")
+        print()
+        time.sleep(1)
+        print(f"The {choice}. That sounds like a great name.")
+        print("...")
+        time.sleep(1)
+        print("The universe really is beautiful.")
+        time.sleep(1)
+        print("Thank you for playing.")
+        time.sleep(2)
+    
+    repeat = input("Would you like to reset the game? Answer options - (yes/no) ")
+    tries = tries + 1
+    if repeat == 'yes':
+        repeat = 'yes'
+    if repeat != 'yes':
+        repeat = 'no'
+        break
+
+
+
