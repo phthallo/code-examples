@@ -1,0 +1,43 @@
+#NB; I did foods instead of sports because I despise exercise haha.
+
+#the main lists are myFood, shared and userFavs. 
+#myFood is a list contaniing my top three foods.
+#shared is the overlap between myFood and userFavs.
+#userFavs are in the user's inputted foods.
+myFood = ["Lasagne", "Pasta", "Pie"]
+shared = []
+
+#defining a function because we were told to do it
+#other option was to get them to input it all in one go, i.e a userFood.split() but it didn't
+#include the information about the "top favourite" and "second favourite" etc which is 
+#important for the decision making process down there.
+def Favs():
+    userFood1 = input("What's your top favourite food? ").title()
+    userFood2 = input("What's your second favourite food? ").title()
+    userFood3 = input("What's your third favourite food? ").title()
+    userFood = [userFood1, userFood2, userFood3]
+    return userFood
+
+#assigning a function result to a variable
+userFavs = Favs()
+
+#checking whether we have the same things in our favourite foods. if true, it adds the shared food to
+#the "shared" list.
+for i in myFood:
+    for j in userFavs:
+        if i == j:
+            shared.append(i)
+
+#decision making process - if the length of the shared list is x number (i.e how many things do we have in common)
+#send a certain message and use 'shared[x]' to refer to a specific numbered variable in that list, starting at 0.
+#if all three foods are in common/2 foods are in common but they are not my top two, it prints "Wow..."
+if len(shared) == 1:
+    print(f"{shared[0]} is my favourite too!")
+elif len(shared) == 0:
+    print(f"That's a shame, I don't like any of those.")
+elif (myFood[0] in shared) and (myFood[1] in shared):
+    print(f"{myFood[0]} and {(myFood[1]).lower()} are my favourites too!")
+elif len(shared) == 3 or len(shared) == 2:
+    print(f"Wow, we have the same foods in common!")
+else: 
+    print("You somehow broke the program...")
