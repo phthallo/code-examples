@@ -1,0 +1,44 @@
+# Basics
+import pygame
+pygame.init()
+
+#Setting Game Up
+size = (700, 500)
+screen = pygame.display.set_mode(size)
+pygame.display.set_caption("Game")
+clock = pygame.time.Clock()
+
+#Defining things
+BLACK = (  0,  0,  0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+YELLOW = (255, 255, 0)
+GREEN = (0, 255, 0)
+PHTHALO = (0, 15, 137)
+
+done = False
+
+#code
+while not done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            print("User asked to quit.")
+            done = True
+    screen.fill(WHITE)
+
+    n = 0
+    colours = ["BLUE", "BLACK", "RED", "YELLOW", "GREEN"]
+    while n <= 2:
+        pygame.draw.ellipse(screen, (colours[n]), [(130*n+110), 20, 125, 125], 10)
+        n += 1
+        #20 + (n-1)*130
+        #20 + 130n - 130
+        #130n-110    
+    while 2 < n <= 4:
+        pygame.draw.ellipse(screen, (colours[n]), [((130*(n-2))+45), 90, 125, 125], 10)
+        n += 1
+        #175 + (n-1)*130
+        #175 + 130n-130
+        #130n + 45
+    pygame.display.flip()
