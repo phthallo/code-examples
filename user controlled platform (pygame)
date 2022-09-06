@@ -1,0 +1,105 @@
+import pygame
+pygame.init()
+
+##### Colours #####
+BLACK = (  0,   0,   0)
+WHITE = (255, 255, 255)
+RED   = (255,   0,   0)
+BLUE  = (  0,   0, 255)
+
+##### Screen Initialisation #####
+SCREEN_WIDTH = 700
+SCREEN_HEIGHT = 500
+size = (SCREEN_WIDTH, SCREEN_HEIGHT)
+screen = pygame.display.set_mode(size)
+pygame.display.set_caption("Title")
+
+
+done = False              
+clock = pygame.time.Clock()
+
+rect_x = 300
+rect_y = 450
+rect_change_x = 10
+rect_change_y = 10
+move_speed = 1
+colour = 0
+shape = 0
+colours = ["WHITE", "RED", "BLUE"]
+shapes = ["rect", "ellipse"]
+ball_x = 50 
+ball_y = 50 
+ball_change_x = 3 
+ball_change_y = 3 
+
+##### Main Program Loop #####
+while not done:
+    ##### Events Loop #####
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = True
+    key = pygame.key.get_pressed()
+    if key[pygame.K_w] or key[pygame.K_UP]:
+        rect_y -= rect_change_y * move_speed
+    if key[pygame.K_a] or key[pygame.K_LEFT]:
+        rect_x -= rect_change_x * move_speed
+    if key[pygame.K_s] or key[pygame.K_DOWN]:
+        rect_y += rect_change_y * move_speed
+    if key[pygame.K_d] or key[pygame.K_RIGHT]:
+        rect_x += rect_change_x * move_speed
+    if key[pygame.K_SPACE]:
+        colour +=1
+        if colour == 3:
+            colour = 0
+    if key[pygame.K_m]:
+        shape += 1
+        if shape > 1:
+            shape = 0
+    if key[pygame.K_n]:
+        move_speed += 1
+        if move_speed > 10:
+            move_speed = 1
+
+
+    ##### Game logic #####
+    ball_x += ball_change_x 
+    ball_y += ball_change_y 
+    if ball_y > SCREEN_HEIGHT-50 or ball_y <0:
+        ball_change_y *= -1 
+    if ball_x > SCREEN_WIDTH-50 or ball_x <0:
+        ball_change_x *= -1 
+
+    ball_x += ball_change_x 
+    ball_y += ball_change_y 
+    if ball_y > SCREEN_HEIGHT-50 or ball_y <0: 
+        ball_change_y *= -1 
+    if ball_x > SCREEN_WIDTH-50 or ball_x <0: 
+        ball_change_x *= -1 
+    
+
+
+    if rect_y > SCREEN_HEIGHT-20:
+        rect_y = SCREEN_HEIGHT-20 
+    if rect_y < 0:
+        rect_y = 0
+    if rect_x > SCREEN_WIDTH-80:
+        rect_x = SCREEN_WIDTH-80
+    if rect_x < 0:
+        rect_x = 0 
+
+
+    ##### Drawing code #####
+    screen.fill(BLACK)
+
+    if shape == 0:
+        rectangle = pygame.draw.rect(screen, (colours[colour]), [rect_x, rect_y, 80, 10])
+    if shape == 1:
+        ellipse = pygame.draw.ellipse(screen, (colours[colour]), [rect_x, rect_y, 80, 20])
+
+    pygame.draw.ellipse(screen, WHITE, [ball_x,ball_y,50,50]) 
+    if rectangle.colliderect(pygame.draw.ellipse(screen, WHITE, [ball_x,ball_y,50,50])):
+        ball_change_y *= -1 
+    pygame.display.flip()
+    clock.tick(60)
+
+pygame.quit()
