@@ -1,0 +1,29 @@
+# Python Refresher - Loops (For)
+# Annabel Quach
+# Version 1.0.2
+# 26th July 2022
+
+
+import time
+print("You are travelling in an elevator.")
+time.sleep(1)
+currentFloor = int(input("What floor are you on now? "))
+desiredFloor = int(input("What floor do you want to get off at? "))
+time.sleep(1)
+if currentFloor < desiredFloor:
+    for number in range(currentFloor, desiredFloor):
+        print("*Elevator music plays*")
+        time.sleep(0.5)
+        print(f"You are on floor {currentFloor + 1}.")
+        currentFloor = currentFloor + 1
+if currentFloor > desiredFloor:
+    for number in range (desiredFloor, currentFloor):
+        print("*Elevator music plays*")
+        time.sleep(0.5)
+        print(f"You are on floor {currentFloor - 1}.")
+        currentFloor = currentFloor - 1
+if currentFloor == desiredFloor:
+    print(f"Ding! You have arrived at floor {desiredFloor}.")
+
+
+
