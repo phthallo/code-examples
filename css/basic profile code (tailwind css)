@@ -1,0 +1,39 @@
+<! -- Like the other CSS codes, this was made in TailwindCSS and designed for use on Buzzly.Art. Blah blah etc 
+It was only optimised for light mode and didn't work that well on mobile, though haha.
+-->
+
+<!-- WILDFLOWER - A F2U BASIC PROFILE CODE -->
+<!-- This is, quite literally, my first code ever. Please let me know if something isn't working.-->
+<div class="whitespace-pre-wrap m-10 p-5 text-center"> 
+<div class="p-10 max-w-max m-auto bg-white rounded-lg "> 
+
+<!-- The above lines of code define the qualities of the 'boxed' area that holds the code within it. -->
+
+<img class="w-full h-24 object-cover mx-auto" src="https://images.unsplash.com/photo-1532028205213-4c4fa81306d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"></img> 
+
+<!-- This code just here is what the header image will show. Replace the Unsplash link with your own image URL. -->
+
+<h2 class="float-left text-4xl font-light uppercase tracking-wide " style="color: #a6966a">YOUR NAME</h2>
+<h2 class="float-right text-left font-light text-sm"> YOUR INFO (right hand side)</h2>
+
+<h2 class="float-left font-light text-sm" style="color: #a6966a"> YOUR INFO (left hand side)
+</h2>
+
+<div class="border-t border-amber-100 pt-2 text-center uppercase font-semibold"></div>
+<div class=" tracking-normal text-justify text-sm"> 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis fringilla metus a leo feugiat condimentum. Etiam interdum tincidunt metus, in semper est commodo sed. Quisque lorem tortor, cursus id condimentum vel, ornare vitae quam. Aliquam erat volutpat. Suspendisse potenti. Quisque sit amet lorem vel quam facilisis pharetra. Vestibulum lacinia tortor in euismod elementum. Nunc at libero nulla. Vivamus in lacus pretium, sollicitudin libero non, laoreet quam. </div>
+<div class="text-left">
+<span class="font-bold text-left ml-1 uppercase tracking-wide" style="color: #a39676">C O M M I S S I O N S ↠</span> <span class="float-right text-left mr-1 uppercase tracking-wide" style="color: #a39676">COMM STATUS</span>
+<span class="font-bold text-left ml-1 uppercase tracking-wide" style="color: #a39676">A R T  T R A D E S ↠</span>  <span class="float-right text-left mr-1 uppercase tracking-wide" style="color: #a39676">TRADE STATUS</span>
+<span class="font-bold text-left ml-1 uppercase tracking-wide" style="color: #a39676">R E Q U E S T S ↠</span>   <span class="float-right text-left mr-1 uppercase tracking-wide" style="color: #a39676">REQUEST STATUS</span>
+</div>
+<!-- These links link to your socials. Edit the ###### to whatever your username is there. -->
+<span class="font-medium text-center text-sm " style="color: #b89e5e"> 
+  <a href="https://toyhou.se/######" rel="nofollow"><i class="fas fa-home"></i> TOYHOUSE </a> | <a href="https://twitter.com/######" rel="nofollow"> <i class="fab fa-twitter"></i> TWITTER </a> |  <a href="https://deviantart.com/######" rel="nofollow"><i class="fab fa-deviantart"></i>  DEVIANTART </a>
+
+<div class="border-t border-amber-100 pt-2 text-center uppercase font-semibold"></div>
+<!-- DO NOT EDIT PAST THIS LINE -->
+<a href="https://buzzly.art/~ceruloryx" rel="nofollow">
+  <i class="fas fa-code"></i> 
+  </a>
+</div>
