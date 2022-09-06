@@ -1,0 +1,61 @@
+<!-- viewable to do list code for people to keep track of their commissions and other work on buzzly.art using tailwind css -->
+
+<!-- SIMPLE TO DO LIST CODE 
+keep the credit edits are fine etc etc
+(i should really write up a tos but i'm too lazy)
+
+this is not interactable (for users visiting the page),
+it can only be edited from the custom box however it should 
+provide users with an idea of what your queue/to do list is like.
+
+| @ceruloryx on buzzly and twitter for any questions regarding code!
+-->
+
+<div class = "bg-gray-100 m-5 shadow-lg p-5">
+  <div class = "lowercase tracking-widest float-left">
+    to do list.
+  </div>
+  <i class = "far fa-clipboard-list float-right mt-1"></i>
+  <hr class = "my-7"></hr>
+
+
+<!-- TO DO LIST STARTS HERE 
+To "strike out" something on the to do list, you will need to do the following.
+1. change "far fa-square" to "fa-check-square". this changes 
+the icon to a checked square, rather than a normal square.
+2. change "text-black" to "text-gray-400". this changes the 
+font colour to be lighter.
+3. place <s> and </s> around the text to be crossed out. 
+-->
+<div class = "grid grid-cols-8 mb-4">
+
+<i class = "far fa-check-square float-left col-span-1 mt-1 ml-2"></i>
+  <div class = "text-gray-400 float-right col-span-7 mb-3">
+  <s>
+  Complete commission 
+  </s>
+  </div>
+
+<i class = "far fa-square float-left col-span-1 mt-1 ml-2"></i>
+  <div class = "text-black float-right col-span-7 mb-3">
+  Complete art trade  
+  </div>
+
+<i class = "far fa-square float-left col-span-1 mt-1 ml-2"></i>
+  <div class = "text-black float-right col-span-7 mb-3">
+  Write lore for OCs
+  </div>
+
+<i class = "far fa-square float-leftcol-span-1 mt-1 ml-2"></i>
+  <div class = "text-black float-right col-span-7 mb-3">
+  Complete commission for X 
+  </div>
+</div>
+</div>
+
+<!-- DO NOT EDIT PAST THIS LINE -->
+<div class="text-white text-center mb-6">
+    <a href="https://buzzly.art/~ceruloryx" rel="nofollow">                                               
+    <i class="fas fa-code"></i> 
+    </a>
+  </div> 
