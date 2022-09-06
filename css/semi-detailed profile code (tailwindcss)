@@ -1,0 +1,78 @@
+<!-- For some reason this was my most popular profile code?? Made on TailwindCSS for Buzzly.Art profile customisation etc etc
+Like the others, I offered it as a free to use code but deactivated my profile later.
+-->
+
+<div class="m-3 p-6 max-max grid grid-cols-8 grid-rows-8 gap-3">
+    <div class="col-start-1 col-end-4 bg-white m-1 p-4 rounded-xl max-l-max overflow-y-auto shadow-lg">
+ 
+    <img class="mx-auto object-cover rounded-full col-span-4 my-6 w-36 h-36" src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=326&q=80"></img>
+ 
+      <span class="float-left col-start-1 uppercase font-bold text-xs text-blue-600">
+        Attribute</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        Result </span>
+        <br>
+        <span class="float-left col-start-1 uppercase font-bold text-xs text-blue-600">
+        Attribute</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        Result </span>
+        <br>
+        <span class="float-left col-start-1 uppercase font-bold text-xs text-blue-600">
+        Attribute</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        Result  </span>
+        <br>
+        <span class="float-left col-start-1 uppercase font-bold text-xs text-blue-600">
+        Attribute</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        Result 
+         </span>
+      <br>
+      <br>
+      <div class="text-blue-500 text-center">
+        <a href="https://toyhou.se/#%23%23%23%23%23%23" rel="nofollow"><i class="fas fa-home"></i>   |   </a>
+        <a href="https://deviantart.com/#%23%23%23%23%23%23" rel="nofollow"><i class="fab fa-deviantart">   |   </i></a>
+        <a href="https://twitter.com/#%23%23%23%23%23%23" rel="nofollow"><i class="fab fa-twitter">   |   </i></a>
+        <a href="https://USERNAME.tumblr.com" rel="nofollow"><i class="fab fa-tumblr">   |   </i></a>
+        <a href="https://discord.com/users/#%23%23%23%23%23%23" rel="nofollow"><i class="fab fa-discord"></i></a>
+ 
+      </div>
+      </div>
+      <div class="col-start-4 col-end-9 bg-white m-1 p-5 rounded-xl shadow-lg">
+        <h1 class="text-xl uppercase tracking-wider font-semibold text-center text-indigo-800">
+          LOREM IPSUM DOLOR </h1>
+      <span class="text-sm font-light">
+        <br>
+        <small>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+        <br>
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <br>
+        <br>
+        <div class="border-t border-amber-100 pt-2 text-center uppercase font-semibold"></div>
+        <br>
+        </span>
+ 
+ <span class="float-left col-start-1 uppercase font-semibold text-xs text-blue-600">
+        Commissions</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        closed </span>
+        <br>
+        <span class="float-left col-start-1 uppercase font-semibold text-xs text-blue-600">
+        Art trades</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        closed </span>
+        <br>
+        <span class="float-left col-start-1 uppercase font-semibold text-xs text-blue-600">
+        Requests</span>
+      <span class="col-start-3 uppercase float-right font-light text-xs text-gray-500">
+        closed  </span>
+</div>
+        </div>
+    <br>
+ 
+<div class="text-white text-center mb-20">
+    <a href="https://buzzly.art/~ceruloryx" rel="nofollow">                                               
+    <i class="fas fa-code"></i> 
+    </a>
+  </div> 
