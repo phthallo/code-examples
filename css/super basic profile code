@@ -1,0 +1,38 @@
+<!-- Lots of placeholders here because this was meant to be the preview. Made in TailwindCSS for Buzzly.art users. 
+-->
+
+<img class="bg-gray-300 rounded-full h-48 w-48 mt-12 m-auto shadow-lg relative z-10" src="https://images.unsplash.com/photo-1535477904881-7dfea0fb80c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+</div></img>
+<div class="bg-white mx-auto shadow-lg mt-5 mb-2 p-9 w-80 text-left">
+  <span class="uppercase font-bold text-xl tracking-wider">Hello</span>
+  <br>
+
+  <span class="uppercase font-light tracking-wider">hello</span>
+  <br>
+  <br>
+  <div class="text-blue-900 hover:text-blue-700">
+  <a href="https:" class="fas fa-home" rel="nofollow"></i></a>  |  
+  <a href="https:" rel="nofollow"><i class="fab fa-deviantart"></i></a>  |  
+  <a href="https:" rel="nofollow"><i class="fab fa-twitter"></i></a>
+  <br>
+
+</div>
+</div>
+<div class="bg-white mx-auto shadow-lg p-5 h-auto w-80 m-6 mb-0 z-0 text-justify">
+  <span class="font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan nec libero ut venenatis. Proin rutrum libero dictum turpis scelerisque, in semper lacus auctor. Donec facilisis mauris at urna efficitur faucibus. Nullam ipsum ante, pulvinar et metus nec, fermentum vehicula est. Integer et neque mi. </span>
+</div>
+<div class="bg-white mx-auto shadow-lg p-3 pl-7 h-auto w-80 m-6 mt-2 grid grid-cols-8 text-center">
+  <div class="font-light uppercase col-start-1 col-end-4 float-left text-blue-900 hover:text-blue-700 hover:font-normal">
+  <a href="https://google.com" rel="nofollow">
+    commissions
+  </div></a> 
+  <div class="col-start-4 col-end-6 text-center"> • </div>
+  <div class="font-light uppercase col-start-6 col-end-8 float-right text-blue-900 hover:text-blue-700 hover:font-normal">
+  <a href="https://google.com" rel="nofollow">
+    Terms </a>
+</span>
+</div>
+</div>
+
+
+
