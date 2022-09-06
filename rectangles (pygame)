@@ -1,0 +1,43 @@
+# Basics
+import pygame
+pygame.init()
+
+#Setting Game Up
+size = (700, 500)
+screen = pygame.display.set_mode(size)
+pygame.display.set_caption("Game")
+clock = pygame.time.Clock()
+
+#Defining things
+BLACK = (  0,  0,  0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+GREEN = (0, 255, 0)
+PHTHALO = (0, 15, 137)
+
+done = False
+
+#code
+while not done:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            print("User asked to quit.")
+            done = True
+    screen.fill(WHITE)
+    n = 1
+    while n <= 4:
+        pygame.draw.rect(screen, BLACK, [(10*n+10), (10*n+10), (220-20*n), (220-20*n)], 2)
+        n += 1
+
+    #a + (n-1)*d
+   
+    #haha maths
+    #20+(n-1)*10
+    #20+10n-10
+    #10n + 10
+
+    #200 + (n-1)*-20
+    #200 -20n +20
+    #220 - 20n
+    pygame.display.flip()
