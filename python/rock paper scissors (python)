@@ -1,0 +1,118 @@
+import random #import the 'random' module
+import time #import the 'time' module
+#game = if game is running
+#score = your score
+#opponent_score = your opponent's score
+#choice = your choice
+#opponent_choice = your opponent's choice
+game = 'yes'
+score = 0 #your score
+opponent_score = 0 #opponent's score
+print("ROCK-PAPER-SCISSORS") #title i guess
+time.sleep(0.5)
+print("Ever wanted to play rock paper scissors with a handful of lines of code? Well, now you can! The rules are simple - pick out of rock, paper, scissors when prompted. Scissors beats paper, which beats rock, which beats scissors. What will you choose?") #introduction
+time.sleep(0.5)
+print()
+while game == 'yes':
+    options = ['rock', 'paper', 'scissors']
+    opponent_choice = random.choice(options)#opponent generating a move
+    print()
+    print("Rock, paper, scissors!")
+    choice = input("> ").lower()
+    if choice == opponent_choice:
+        time.sleep(0.5)
+        print()
+        print("Tie!")
+        game == 'yes'
+        
+    if choice == "rock" and opponent_choice == "paper":
+        opponent_score = opponent_score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked rock and your opponent picked paper! You lost that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if opponent_score == 3:
+            print("You lost the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+
+    if choice == "rock" and opponent_choice == "scissors":
+        score = score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked rock and your opponent picked scissors! You won that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if score == 3:
+            print("You won the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+
+    if choice == "paper" and opponent_choice == "scissors":
+        opponent_score = opponent_score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked paper and your opponent picked scissors! You lost that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if opponent_score == 3:
+            print("You lost the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+
+    if choice == "paper" and opponent_choice == "rock":
+        score = score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked paper and your opponent picked rock! You won that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if score == 3:
+            print("You won the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+
+    if choice == "scissors" and opponent_choice == "rock":
+        opponent_score = opponent_score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked scissors and your opponent picked rock! You lost that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if opponent_score == 3:
+            print("You lost the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+
+    if choice == "scissors" and opponent_choice == "paper":
+        score = score + 1
+        time.sleep(0.5)
+        print()
+        print(f"You picked scissors and your opponent picked paper! You won that round. Your score is {score} and your opponent's score is {opponent_score}. ")
+        if score == 3:
+            print("You won the game! Play again? (yes/no)")
+            game = input("> ").lower()
+            if game == 'yes':
+                score = 0
+                opponent_score = 0
+            if game == 'no':
+                print("See ya!")
+                break
+    
+
