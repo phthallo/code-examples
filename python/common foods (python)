@@ -1,7 +1,7 @@
 #NB; I did foods instead of sports because I despise exercise haha.
 
 #the main lists are myFood, shared and userFavs. 
-#myFood is a list contaniing my top three foods.
+#myFood is a list containing my top three foods.
 #shared is the overlap between myFood and userFavs.
 #userFavs are in the user's inputted foods.
 myFood = ["Lasagne", "Pasta", "Pie"]
